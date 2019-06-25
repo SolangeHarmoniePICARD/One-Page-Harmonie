@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Parisienne&display=swap');
+
+.harmonie{
+  font-family: 'Parisienne', cursive;
+}
+hr{
+  transform:rotate(2deg);
+  position:relative;
+  border:none;
+  height:1px;
+  background:black;
+}
+hr:nth-of-type(even){
+  transform:rotate(-2deg);
+}
+hr:before{
+  font-size:2em;
+  display:inline-block;
+  transform:translateY(-0.6em) translateX(-0.50em) rotate(-25deg) rotateX(-180deg) ;
+  width:2em;
+}
+hr:after{
+  font-size:2em;
+  display:inline-block;
+  position:absolute;
+  right:0;
+  transform:translateY(-0.6em) translateX(0.65em) rotate(-29deg) rotateY(180deg);
+  width:2em;
+}
+
+.margin-right{font-size:32px; margin-right:24px };
+
+#section1{font-size:40px;}
