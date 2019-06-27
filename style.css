@@ -3,6 +3,7 @@
 .harmonie{
   font-family: 'Parisienne', cursive;
 }
+
 hr{
   transform:rotate(2deg);
   position:relative;
@@ -27,6 +28,73 @@ hr:after{
   transform:translateY(-0.6em) translateX(0.65em) rotate(-29deg) rotateY(180deg);
   width:2em;
 }
+
+.margin-right{font-size:32px; margin-right:24px };
+
+
+.social-network {
+  margin-right: 16px;
+  font-size: 21px;
+}
+.social-network-profil {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.nav-link{
+  font-weight: bolder;
+}
+
+
+ul {
+list-style:none;
+}
+
+#leaf{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:32px;
+margin-bottom:32px;
+}
+
+
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+content: '';
+display: block;
+clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+width: 33.333%;
+}
+
+.grid-item {
+float: left;
+}
+
+.grid-item img {
+display: block;
+max-width: 100%;
+}
+
 
 .margin-right{font-size:32px; margin-right:24px };
 
