@@ -109,3 +109,25 @@ max-width: 100%;
 .margin-right{font-size:32px; margin-right:24px };
 
 #section1{font-size:40px;}
+
+/* Progress bar */
+.container-personality {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.personality {
+  text-align: right;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.rigueur {width: 85%; background-color: #f1c40f;}
+.autonomie {width: 80%; background-color: #d35400;}
+.equipe {width: 90%; background-color: #c0392b;}
+.patisserie {width: 5%; background-color: #2ecc71;}
+.adaptabilite {width: 90%; background-color: #2980b9;}
+.obstacles {width: 80%; background-color: #8e44ad;}
+.effort {width: 95%; background-color: #ffb142;}
+.critique {width: 80%; background-color: #C4E538;}
