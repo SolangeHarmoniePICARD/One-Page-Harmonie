@@ -223,10 +223,46 @@
           <h6 class="card-header rounded-0 text-white bg-dark"><i class="fas fa-palette"></i> Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité</h6>
             <small class="text-muted">
             <ul class="list-group">
-              <li class="list-group-item border-right-0">  Maquetter une application</li>
-              <li class="list-group-item border-right-0">  Réaliser une interface utilisateur web statique et adaptable</li>
-              <li class="list-group-item border-right-0">  Développer une interface utilisateur web dynamique</li>
-              <li class="list-group-item border-bottom-0 border-right-0">  Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce<li>
+              <li class="list-group-item border-right-0 popup" onclick="maquetteFunction()">  Maquetter une application
+                <span class="popuptext" id="maquettePopup">
+                  - Utiliser un outil de maquettage ;<br>
+                  - Construire la maquette de l'application optimisée pour chacun des équipements ciblés ;<br>
+                  - Construire l’enchaînement et la composition des écrans ;<br>- Connaissance des règles ergonomiques issues de l'expérience utilisateur ;<br>
+                  - Connaissance des réglementations en vigueur concernant la protection des données individuelles ;<br>
+                  - Connaissance des principes de sécurisation d’une interface utilisateur (simplicité, minimalité des affichages et des fonctionnalités) ;<br>
+                  - Connaissance des composants d'interface graphique.
+                </span>
+                </li>
+              <li class="list-group-item border-right-0 popup" onclick="interfaceStatiqueFunction()">  Réaliser une interface utilisateur web statique et adaptable
+                <span class="popuptext" id="interfaceStatiquePopup">
+                  - Structurer les pages selon les recommandations du W3C pour le web et le web mobile ;<br>
+                  - Coder les pages web statiques et adaptables, y compris pour le web mobile, avec un langage de balise et feuilles de style ;<br>
+                  - Utiliser un framework de type adaptatif, y compris pour le web mobile ;<br>
+                  - Rendre visible le site sur les moteurs de recherche avec les techniques de référencement naturel ;<br>
+                  - Publier les pages web sur un serveur web ;<br>
+                  - Utiliser un outil de gestion de version de code source.
+                </span>
+                </li>
+              <li class="list-group-item border-right-0 popup" onclick="interfaceDynamiqueFunction()">  Développer une interface utilisateur web dynamique
+                <span class="popuptext" id="interfaceDynamiquePopup">
+                  - Écrire un algorithme ;<br>
+                  - Intégrer dans une page web des scripts événementiels avec un langage de script client ;<br>
+                  - Programmer avec un framework de script client ;<br>
+                  - Corriger les erreurs et remédier aux vulnérabilités détectées ;<br>
+                  - Réaliser un jeu de tests des scripts client ;<br>
+                  - Publier l'application développée sur un serveur web.
+                </span>
+                </li>
+              <li class="list-group-item border-bottom-0 border-right-0 popup" onclick="cmsFunction()">  Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce
+                <span class="popuptext" id="cmsPopup">
+                  - Installer une solution de type CMS ou e-commerce ;<br>
+                  - Construire la structure du site ;<br>
+                  - Utiliser un gabarit de mise en page fourni dans la solution installée ;<br>
+                  - Réaliser un gabarit de mise en page spécifique ;<br>
+                  - Connaissance de la chaîne de publication (workflow) d’un CMS ;<br>
+                  - Connaissance des principes de gestion des droits et des rôles des comptes utilisateur.
+                </span>
+                </li>
             </ul>
           </small>
       </div>
@@ -240,10 +276,50 @@
             <h6 class="card-header rounded-0 text-white bg-dark"><i class="fas fa-cogs"></i> Développer la partie back-end d'une application web ou web mobile en intégrant les recommandations de sécurité</h6>
             <small class="text-muted">
             <ul class="list-group">
-              <li class="list-group-item border-left-0">  Créer une base de données</li>
-              <li class="list-group-item border-left-0">  Développer des composants d'accès aux données</li>
-              <li class="list-group-item border-left-0">  Développer la partie back-end d'une application web</li>
-              <li class="list-group-item border-left-0 border-bottom-0">  Élaborer et mettrre en œuvre des composants dans une application de gestion de contenu ou e-commerce</li>
+              <li class="list-group-item border-left-0 popup" onclick="bddFunction()">  Créer une base de données
+                <span class="popuptext" id="bddPopup">
+                  - Construire l’organisation physique des données ;<br>
+                  - Mettre en œuvre les instructions de création, de modification et de suppression de base de données ;<br>
+                  - Mettre en œuvre les instructions pour implémenter les contraintes et l'optimisation des accès ;<br>
+                  - Écrire et exécuter un script de création de base de données ;<br>
+                  - Générer un script de création de la base de données à l'aide de l'outil de modélisation ;<br>
+                  - Mettre en œuvre les utilitaires de sauvegarde et restauration sur un serveur de bases de données.
+                </span>
+                </li>
+              <li class="list-group-item border-left-0 popup" onclick="accesFunction()">  Développer des composants d'accès aux données
+                <span class="popuptext" id="accesPopup">
+                  - Coder de façon sécurisée les accès aux données en consultation, en création, en mise à jour et en
+suppression&nbsp;;<br>
+                  - Fonder la sécurité des composants d’accès sur l’authentification et la gestion de la sécurité du SGDB ;<br>
+                  - Coder des composants dans un langage objet, avec un style de programmation défensif ;<br>
+                  - Utiliser des bibliothèques d'objets existants ;<br>
+                  - Réaliser un jeu de tests unitaires avec un outil de test d’un point de vue fonctionnel et recherche de
+vulnérabilité ;<br>
+                  - Corriger les erreurs et remédier aux vulnérabilités détectées ; <br>
+                  - Documenter les composants.
+                </span>
+                </li>
+              <li class="list-group-item border-left-0 popup" onclick="backendFunction()">  Développer la partie back-end d'une application web
+                <span class="popuptext" id="backendPopup">
+                  - Développer la partie dynamique de l'application avec des composants serveurs, dans un style défensif, et
+éventuellement en asynchrone ;<br>
+                  - Appeler des Web Services dans un composant serveur ;<br>
+                  - Sécuriser la liaison entre le client et le serveur web ;<br>
+                  - Gérer la sécurité de l’application (authentification, permissions…) dans la partie serveur ;<br>
+                  - Connaissance des principales failles de sécurité des applications web (XSS, CSRF, …) et de leurs
+parades ;<br>
+                  - Utiliser des composants d’accès aux données ;<br>
+                  - Publier l'application développée sur un serveur web ;<br>
+                  - Tester la sécurité du site, avec un guide de test reconnu (par exemple, celui d’OWASP).
+                </span>
+                </li>
+              <li class="list-group-item border-left-0 border-bottom-0 popup" onclick="composantsFunction()">  Élaborer et mettrre en œuvre des composants dans une application de gestion de contenu ou e-commerce
+                <span class="popuptext" id="composantsPopup">
+                  - Connaissance du vocabulaire anglais professionnel associé au web et aux solutions de gestion de contenu
+et e-commerce ;<br>
+                  -  intégrer ou coder, tester et documenter des modules complémentaires afin de rendre le site web adapté aux besoins des utilisateurs.
+                </span>
+                </li>
             </ul>
           </small>
       </div>
