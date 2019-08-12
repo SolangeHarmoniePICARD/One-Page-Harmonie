@@ -14,7 +14,7 @@ imagesLoaded( grid ).on( 'progress', function() {
 msnry.layout();
 });
 
-//POPUP
+// ----- POPUP -----
 function maquetteFunction() {
   var maquettePopup = document.getElementById("maquettePopup");
   maquettePopup.classList.toggle("show");
@@ -46,4 +46,28 @@ function backendFunction() {
 function composantsFunction() {
   var interfacePopup = document.getElementById("composantsPopup");
   interfacePopup.classList.toggle("show");
+}
+
+
+// ----- Active dot -----
+
+// Get the container element
+var circleBar = document.getElementById("circle-bar");
+
+// Get all buttons with class="btn" inside the container
+var dots = circleBar.getElementsByClassName("dot");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("dot-active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" dot-active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " dot-active";
+  });
 }
